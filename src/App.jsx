@@ -15,8 +15,18 @@ function App() {
   return (
     <>
     <Titulo></Titulo>
-    <Formulario texto = {subtitulo1}></Formulario>
-    <Agenda texto={subtitulo2}> </Agenda>
+
+    <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <Formulario texto = {subtitulo1}></Formulario>
+          </div>
+          <div class="one-half column">
+                <Agenda texto={subtitulo2}> </Agenda>
+          </div>
+        </div>
+    </div>
+    
     </>
   )
 }
