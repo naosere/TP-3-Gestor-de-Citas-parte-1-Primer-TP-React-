@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Agenda from './components/Agenda'
+import Listado from './components/Listado'
 
 import Titulo from './components/Titulo'
 import Formulario from './components/Formulario'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const usestateincio = [""]
+  const [citas, setCitas] = useState(usestateincio)
   const subtitulo1 = "Crear una cita"
   const subtitulo2 = "Administra tus citas"
   return (
@@ -19,10 +21,10 @@ function App() {
     <div class="container">
         <div class="row">
           <div class="one-half column">
-            <Formulario texto = {subtitulo1}></Formulario>
+            <Formulario citas={citas} setCitas={setCitas} ></Formulario>
           </div>
           <div class="one-half column">
-                <Agenda texto={subtitulo2}> </Agenda>
+            <Listado citas={citas} setCitas={setCitas} > </Listado>
           </div>
         </div>
     </div>

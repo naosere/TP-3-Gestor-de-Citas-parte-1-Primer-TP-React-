@@ -1,7 +1,6 @@
 import './Cita.css'
 
 const Cita = ({mascota, duenio, fecha, hora, sintomas}) => {
-
             return(
             <div>
               <p>Mascota: <span>{mascota}</span></p>
