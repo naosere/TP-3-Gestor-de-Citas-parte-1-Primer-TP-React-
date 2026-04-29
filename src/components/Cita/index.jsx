@@ -1,15 +1,15 @@
 import './Cita.css'
 
-const Cita = ({mascota, duenio, fecha, hora, sintomas}) => {
+const Cita = ({mascota, duenio, fecha, hora, sintomas, eliminar}) => {
             return(
-            <div>
-              <p>Mascota: <span>{mascota}</span></p>
-              <p>Dueño: <span>{duenio}</span></p>
-              <p>Fecha: <span>{fecha}</span></p>
-              <p>Hora: <span>{hora}</span></p>
-              <p>Sintomas: <span>{sintomas}</span></p>
-              <button>Eliminar ×</button>
-            </div>
+            <div className="cita">
+              <p><span>Mascota:</span> {mascota}</p>
+              <p><span>Dueño:</span> {duenio}</p>
+              <p><span>Fecha:</span> {fecha}</p>
+              <p><span>Hora:</span> {hora}</p>
+              <p><span>Síntomas:</span> {sintomas}</p>
+              <button onClick={eliminar}><p>ELIMINAR ×</p></button>
+            </div>  
             )
 }
 

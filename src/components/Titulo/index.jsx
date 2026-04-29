@@ -1,3 +1,4 @@
+import './Titulo.css'
 const Titulo = () => {
     return <h1>ADMINISTRADOR DE PACIENTES</h1>
 }
