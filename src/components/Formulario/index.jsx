@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Formulario.css'
 const Formulario = ({citas, setCitas}) =>{
     const agregarCita = (e) =>{
@@ -22,6 +23,7 @@ const Formulario = ({citas, setCitas}) =>{
         formulario.hora.value = "";
         formulario.sintomas.value = "";
     }
+
     return (
         <div>
         
